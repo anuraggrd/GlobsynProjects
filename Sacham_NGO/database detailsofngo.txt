@@ -1,0 +1,128 @@
+use ngo;
+ 
+
+show tables;
+Tables in ngo
+
+dgoods
+donline
+eventdetails
+generalregdetails
+regdetails
+scholarshipdetails
+volunteerdetails
+
+
+desc volunteerdetails
+==================================
+ 
+# Field, Type, Null, Key, Default, Extra
+name	varchar(30)	YES			
+email	varchar(30)	YES			
+password	varchar(30)	YES			
+mobileno	varchar(11)	YES			
+dob	varchar(20)	YES			
+age	varchar(2)	YES			
+gender	varchar(11)	YES			
+qualification	varchar(30)	YES			
+country	varchar(30)	YES			
+state	varchar(30)	YES			
+city	varchar(30)	YES			
+adharno	varchar(12)	YES			
+address	varchar(255)	YES			
+pincode	varchar(30)	YES			
+occupation	varchar(20)	YES			
+experience	varchar(10)	YES			
+why	varchar(50)	YES			
+program	varchar(50)	YES			
+time	varchar(50)	YES			
+available	varchar(50)	YES			
+findus	varchar(50)	YES			
+
+=================================================
+desc scholarshipdetails;
+=================================================
+# Field, Type, Null, Key, Default, Extra
+name	varchar(50)	YES			
+email	varchar(50)	YES			
+gname	varchar(50)	YES			
+gqualification	varchar(50)	YES			
+goccupation	varchar(50)	YES			
+gmobile	varchar(15)	YES			
+bankname	varchar(50)	YES			
+branchname	varchar(50)	YES			
+bankifsc	varchar(50)	YES			
+accountnumber	varchar(50)	YES			
+accountholdername	varchar(50)	YES			
+institutename	varchar(100)	YES			
+instituteaddress	varchar(100)	YES			
+previousclasspercent	double(10,2)	YES			
+annualtuitionfee	varchar(50)	YES			
+address	varchar(50)	YES			
+state	varchar(50)	YES			
+district	varchar(50)	YES			
+pincode	varchar(50)	YES			
+income	int(50)	YES			
+
+==================================================
+desc regdetails
+==================================================
+# Field, Type, Null, Key, Default, Extra
+'name', 'varchar(40)', 'YES', '', NULL, ''
+'email', 'varchar(55)', 'NO', 'PRI', NULL, ''
+'password', 'varchar(50)', 'YES', '', NULL, ''
+'mobileno', 'varchar(15)', 'YES', '', NULL, ''
+'dob', 'varchar(20)', 'YES', '', NULL, ''
+'gender', 'varchar(10)', 'YES', '', NULL, ''
+========================================================
+desc generalregdetails
+name	varchar(40)	YES			
+email	varchar(55)	NO	PRI		
+password	varchar(50)	YES			
+mobileno	varchar(15)	YES			
+dob	varchar(20)	YES			
+gender	varchar(10)	YES			
+==============================================================
+desc eventdetails
+=================================================
+ename	varchar(50)	YES			
+edescription	varchar(500)	YES			
+edate	varchar(50)	YES			
+place	varchar(50)	YES			
+time	varchar(50)	YES			
+==============================================
+desc donline
+===============================================
+name	varchar(50)	YES			
+email	varchar(50)	YES			
+mobileno	varchar(15)	NO			
+dob	varchar(10)	NO			
+month	int(11)	NO			
+year	varchar(5)	NO			
+panno	varchar(10)	NO	MUL		
+ammount	int(10) unsigned	NO			
+pincode	varchar(10)	NO			
+address	varchar(100)	NO			
+city	varchar(15)	NO			
+state	varchar(15)	NO			
+country	varchar(15)	NO		INDIA	
+paymentmode	varchar(25)	YES			
+sugesstion	varchar(250)	YES			
+DoId	int(10) unsigned	NO	PRI		auto_increment
+====================================================================
+desc  dgoods
+===========================================
+name	varchar(50)	YES			
+email	varchar(55)	NO	PRI		
+mobileno	varchar(15)	NO			
+adhrno	varchar(15)	NO	UNI		
+goodstype	varchar(60)	YES			
+goodsdesc	varchar(150)	YES			
+pincode	varchar(15)	NO	UNI		
+address	varchar(100)	NO			
+city	varchar(20)	YES			
+state	varchar(20)	YES			
+country	varchar(20)	YES		INDIA	
+
+
+

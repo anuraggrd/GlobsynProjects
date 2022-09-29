@@ -1,0 +1,29 @@
+	import java.text.DateFormat;
+	import java.text.ParseException;
+	import java.text.SimpleDateFormat;
+	import java.util.Calendar;
+	import java.util.Date;
+
+
+	public class DateTest 
+	{
+		public static void main(String args[])throws ParseException
+		{
+
+		DateFormat  formatter=new SimpleDateFormat("yyyy-mm-dd");
+		Date Dob = (Date)formatter.parse("2016-07-20");
+		int currentAge=calculateAge(Dob);
+		System.out.println(currentAge );
+		}
+		public static int calculateAge(Date Dob)
+		{
+		Calendar Dob1=Calendar.getInstance();
+		Dob1.setTime(Dob);
+		Calendar CurrentDate=Calendar.getInstance();
+		CurrentDate.setTime(new Date());
+		return CurrentDate.get(Calendar.YEAR)-Dob1.get(Calendar.YEAR);
+		}
+		
+		
+		
+	}
